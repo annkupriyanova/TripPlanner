@@ -1,0 +1,16 @@
+﻿.place_block {
+    border-bottom: solid 2px blue;
+    min-height: 200px;
+    width:inherit;
+    
+}
+
+form input[type='checkbox']{
+    color: black;
+    margin-bottom: 15px;
+}
+
+#loading {
+    display: none;
+    text-align: center;
+}
