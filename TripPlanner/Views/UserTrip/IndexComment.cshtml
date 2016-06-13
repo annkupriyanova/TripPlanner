@@ -1,0 +1,19 @@
+﻿@model IEnumerable<TripPlanner.Models.Users_Trips>
+
+<h3 style="margin-bottom:10px; padding-left:6px">Отзывы</h3>
+<div class="12u 12u(mobile)">
+    @{
+        foreach (var item in Model)
+        {
+            <article class="comment">
+                <header>
+                    <p style="font-size:75%"><i><strong>@item.AspNetUser.UserName</strong></i></p>
+                    <p style="font-size:75%"><span class="icon fa-star" style="margin-right: 10px"></span>@item.Rating / 5</p>
+                </header>
+                <section style="padding-top:0">
+                    <p>@item.CommentText</p>
+                </section>
+            </article>
+        }
+    }
+</div>

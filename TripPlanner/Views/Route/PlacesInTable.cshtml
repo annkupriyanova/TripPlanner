@@ -1,0 +1,85 @@
+﻿@model IEnumerable<TripPlanner.Models.PlaceInTableViewModel>
+
+<div style="overflow-x:auto;">
+    <table id="detailedRouteTable" class="table default">
+        @{
+            int day = 0, indexNum = 1;
+            string[] colors = { "#4169E0", "#FFA500", "#32CD32", "#FF0000", "#800080", "#191970", "#BA55D3", "#FF69B4", "#FFFF00", "#008B8B" };
+            string[] indexes = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
+
+            foreach (var place in Model)
+            {
+                if (place.DayNum != day)
+                {
+                    day++;
+                    indexNum = 1;
+                    <tr><th colspan="3" style="background-color:@colors[day - 1]">День @day.ToString()</th></tr>
+                    //начальная точка
+                    <tr>
+                        <td colspan="3"><span class="icon fa-flag" style="margin-right:10px"></span>@place.Address</td>
+                    </tr>
+                }
+                else
+                {
+                    //конечная точка
+                    if (place.Name == null)
+                    {
+                        <tr>
+                            <td colspan="3"><span class="icon fa-flag" style="margin-right:10px"></span>@place.Address</td>
+                            @*<td colspan="2">
+                                <a style="font-size:80%; font-style:italic" onclick="showCheckboxes()" >Не успели что-то посетить?"</a>
+                                <a style="display:none; font-size:80%; font-style:italic" id="@day" onclick="editTrip(@day)" class="editTrip">Перестроить маршрут</a>
+                            </td>*@
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td class="index">@indexes[place.IndexNum - 1]</td>
+                            <td>
+                                <table class="innerTable">
+                                    <tr><td class="name">@place.Name</td></tr>
+                                    <tr><td class="address"><span class="icon fa-flag"></span>@place.Address</td></tr>
+                                    <tr><td class="website"><a href="@place.Website">@place.Website</a></td></tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table class="innerTable">
+                                    @{string idOpenHours = place.DayNum.ToString() + place.IndexNum.ToString();}
+                                    <tr><td class="hoursLink"><a onclick="ShowOrHide(@idOpenHours)">Время работы</a></td></tr>
+                                    <tr id="@idOpenHours" style="display:none">
+                                        <td>
+                                            @{
+                                                if (place.OpeningHours.Count != 0)
+                                                {
+                                                    <ul class="hours">
+                                                        @foreach (var d in place.OpeningHours)
+                                                        {
+                                                            <li> - @d</li>
+                                                        }
+                                                    </ul>
+                                                }
+                                                else
+                                                {
+                                                    <p style="font-size:75%">Данные отсутствуют</p>
+                                                }
+                                            }
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td> 
+                            <td>
+                                <input type="checkbox" value="@place.IndexNum" style="display:none" />
+                            </td>                           
+                        </tr>
+                    }
+
+                }
+
+                indexNum++;
+            }
+        }
+
+    </table>
+</div>
+<script src="~/Scripts/myFunc/ShowHide.js"></script>

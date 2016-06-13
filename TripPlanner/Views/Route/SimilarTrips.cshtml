@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TripPlanner.Models.Trip>
+
+@{
+    if (Model.Count() == 0)
+    {
+        <p>Похожих маршрутов не найдено</p>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <article class="4u 12u(mobile) special">
+                <div>
+                    <a href="@Url.Action("Details", "Route", new { id = item.TripId})" class="image fit">
+                        <img src="@item.PhotoUrl" alt="" />
+                    </a>
+                    <header>
+                        <h3><a href="@Url.Action("Details", "Route", new { id = item.TripId})"><strong>@item.Name</strong></a></h3>
+                    </header>
+                    <div style="position:absolute; bottom:3em; width:100%; text-align:center">
+                        <div style="display:inline-block; margin-right:1em"><span class="icon fa-calendar" style="margin-right: 7px"></span>@item.Duration</div>
+                        <div style="display:inline-block; margin-right:1em"><span class="icon fa-flag" style="margin-right: 7px"></span>@item.NumOfNodes</div>
+                        <div style="display:inline-block"><span class="icon fa-star" style="margin-right: 7px"></span>@item.Rating / 5</div>
+                    </div>
+                </div>
+
+            </article>
+        }
+    }
+}

@@ -17,22 +17,15 @@ namespace TripPlanner.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Route()
         {
-            this.Comments = new HashSet<Comment>();
-            this.Route_Nodes = new HashSet<Route_Nodes>();
+            this.Routes_Nodes = new HashSet<Routes_Nodes>();
         }
     
         public int RouteId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Nullable<int> Rank { get; set; }
-        public Nullable<int> Duration { get; set; }
-        public string UserId { get; set; }
-        public System.DateTime CreationDate { get; set; }
+        public int DayNum { get; set; }
+        public int TripId { get; set; }
     
-        public virtual AspNetUser AspNetUser { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Comment> Comments { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Route_Nodes> Route_Nodes { get; set; }
+        public virtual ICollection<Routes_Nodes> Routes_Nodes { get; set; }
+        public virtual Trip Trip { get; set; }
     }
 }

@@ -1,0 +1,13 @@
+﻿@model TripPlanner.Models.Trip
+
+<h3>Вы действительно хотите удалить маршрут:</h3>
+<div>
+    <p>@Model.Name</p>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <input type="submit" value="Удалить" />
+    }
+</div>

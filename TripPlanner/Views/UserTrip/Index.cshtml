@@ -1,0 +1,15 @@
+﻿
+<form method="get" action="@Url.Action("Create","UserTrip", new { id = ViewData["TripId"] })">
+    @{
+        bool disabled = Convert.ToBoolean(ViewData["Disabled"]);
+        if (disabled)
+        {
+            <input type="submit" value="Добавить маршрут" disabled />
+        }
+        else
+        {
+            <input type="submit" value="Добавить маршрут" />        
+        }
+    }
+</form>
+

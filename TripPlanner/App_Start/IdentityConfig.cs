@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using TripPlanner.Models;
+using System.Text.RegularExpressions;
 
 namespace TripPlanner
 {
@@ -51,14 +52,15 @@ namespace TripPlanner
             };
 
             // Configure validation logic for passwords
-            manager.PasswordValidator = new PasswordValidator
-            {
-                RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
-            };
+            //manager.PasswordValidator = new PasswordValidator
+            //{
+            //    RequiredLength = 6,
+            //    RequireNonLetterOrDigit = false,
+            //    RequireDigit = true,
+            //    RequireLowercase = true,
+            //    RequireUppercase = false,
+            //};
+            manager.PasswordValidator = new CustomPasswordValidator(6);
 
             // Configure user lockout defaults
             manager.UserLockoutEnabledByDefault = true;
@@ -104,6 +106,32 @@ namespace TripPlanner
         public static ApplicationSignInManager Create(IdentityFactoryOptions<ApplicationSignInManager> options, IOwinContext context)
         {
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
+        }
+    }
+
+    public class CustomPasswordValidator : IIdentityValidator<string>
+    {
+        public int RequiredLength { get; set; } // минимальная длина
+        public CustomPasswordValidator(int length)
+        {
+            RequiredLength = length;
+        }
+        public Task<IdentityResult> ValidateAsync(string item)
+        {
+            if (String.IsNullOrEmpty(item) || item.Length < RequiredLength)
+            {
+                return Task.FromResult(IdentityResult.Failed(
+                String.Format("Минимальная длина пароля равна {0}", RequiredLength)));
+            }
+
+            string pattern = "^(?=.*[0-9])[a-zA-Z0-9_]{6,18}$";
+
+            if (!Regex.IsMatch(item, pattern))
+            {
+                return Task.FromResult(IdentityResult.Failed("Пароль должен включать хотя бы 1 цифру, буквы и знак подчеркивания. Максимальная длина пароля равна 18"));
+            }
+
+            return Task.FromResult(IdentityResult.Success);
         }
     }
 }

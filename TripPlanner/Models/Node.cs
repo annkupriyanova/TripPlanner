@@ -17,14 +17,16 @@ namespace TripPlanner.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Node()
         {
-            this.Route_Nodes = new HashSet<Route_Nodes>();
+            this.Routes_Nodes = new HashSet<Routes_Nodes>();
         }
     
         public int NodeId { get; set; }
-        public string Name { get; set; }
-        public string LatLng { get; set; }
+        public string PlaceId { get; set; }
+        public double Lat { get; set; }
+        public double Lng { get; set; }
+        public string Address { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Route_Nodes> Route_Nodes { get; set; }
+        public virtual ICollection<Routes_Nodes> Routes_Nodes { get; set; }
     }
 }

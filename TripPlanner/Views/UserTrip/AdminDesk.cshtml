@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TripPlanner.Models.Users_Trips>
+
+<div class="wrapper style1">
+    <div class="container">
+        <h3 style="margin-bottom:10px; padding-left:6px">Рабочий кабинет</h3>
+        <table class="table default">
+            <thead>
+                <tr>
+                    <th style="color: #5b5b5b">Пользователь</th>
+                    <th style="color: #5b5b5b">Город</th>
+                    <th style="color: #5b5b5b">Отзыв</th>
+                    <th></th>
+                </tr>
+            </thead>
+            @{
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><p style="font-size:75%"><i><strong>@item.AspNetUser.UserName</strong></i></p></td>
+                        <td><p>@item.Trip.Name</p></td>
+                        <td><p>@item.CommentText</p></td>
+                        <td><a href="@Url.Action("DeleteComment", "UserTrip", new { userId = item.UserId, tripId = item.TripId})">Удалить</a></td>
+                    </tr>
+                }
+            }
+        </table>
+        
+    </div>
+</div>

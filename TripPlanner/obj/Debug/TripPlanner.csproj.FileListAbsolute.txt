@@ -1,0 +1,140 @@
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\csc.exe
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\vbc.exe
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\VBCSCompiler.exe
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\TripPlanner.dll.config
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\TripPlanner.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\TripPlanner.pdb
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Antlr3.Runtime.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\EntityFramework.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\EntityFramework.SqlServer.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Newtonsoft.Json.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Owin.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Helpers.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Mvc.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Optimization.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Razor.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.WebPages.Deployment.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.WebPages.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.WebPages.Razor.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\WebGrease.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Helpers.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Mvc.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Optimization.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.Razor.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.WebPages.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.WebPages.Deployment.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\System.Web.WebPages.Razor.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Antlr3.Runtime.pdb
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Newtonsoft.Json.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\EntityFramework.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\EntityFramework.SqlServer.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\obj\Debug\TripPlanner.csprojResolveAssemblyReference.cache
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\obj\Debug\TripPlanner.dll
+C:\Users\annku\documents\visual studio 2015\Projects\TripPlanner\TripPlanner\obj\Debug\TripPlanner.pdb
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\csc.exe
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\vbc.exe
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\VBCSCompiler.exe
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\TripPlanner.dll.config
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\TripPlanner.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\TripPlanner.pdb
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Antlr3.Runtime.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\EntityFramework.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\EntityFramework.SqlServer.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Newtonsoft.Json.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Owin.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Helpers.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Mvc.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Optimization.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Razor.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.WebPages.Deployment.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.WebPages.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.WebPages.Razor.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\WebGrease.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Helpers.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Mvc.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Optimization.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.Razor.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.WebPages.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.WebPages.Deployment.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\System.Web.WebPages.Razor.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Antlr3.Runtime.pdb
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Newtonsoft.Json.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\EntityFramework.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\EntityFramework.SqlServer.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\obj\Debug\TripPlanner.csprojResolveAssemblyReference.cache
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\obj\Debug\TripPlanner.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\obj\Debug\TripPlanner.pdb
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner — копия (2)\TripPlanner\bin\Rotativa.dll
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner\TripPlanner\bin\Rotativa.dll

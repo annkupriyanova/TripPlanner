@@ -1,16 +1,102 @@
-﻿.place_block {
-    border-bottom: solid 2px blue;
+﻿/*List of places*/
+.place_block {
+    /*border-bottom: solid 2px blue;
     min-height: 200px;
     width:inherit;
     
+    margin: 0 0 10px 0;
+    height:auto;
+    width:100%;*/
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    max-height:200px;
 }
+
+.row.place_block{
+    margin: 0 0 10px 0;
+    padding: 0 0 0 0;
+}
+    .row.place_block > .description{
+        padding: 20px 20px 0 20px;
+        max-height:inherit;
+    }
+    .row.place_block > .photo{
+        padding: 0 0 0 0;
+        margin-bottom:0;
+        max-height:inherit;
+    }
+        .row.place_block > .photo img{
+            height:200px;
+        }
+
+    label.name{
+        font-weight:bold;
+        font-size: 150%;
+        text-transform: capitalize;
+    }
+        label.name:hover{
+            color: #ef8376;
+    }
+
+    .row.place_block > .description p.address, 
+    .row.place_block > .description p.rating,
+    .row.place_block > .description p{
+        margin: 0 0 0 0;
+        padding-top: 0;
+        font-size:80%;
+    }
+
+        .row.place_block > .description p.address > span,
+        .row.place_block > .description p.rating > span{
+            margin-right: 10px;
+        }
+
+    .review{
+        padding-top:0;
+        overflow:auto;
+    }
+    .review > p{
+        font-style: italic;
+        font-size:90%;
+        margin-bottom:0;
+        border-left: solid 2px #ef8376;
+        padding-left:6px;
+        line-height:normal:
+    }
 
 form input[type='checkbox']{
     color: black;
     margin-bottom: 15px;
+    margin-right:15px;
+    
 }
 
 #loading {
     display: none;
     text-align: center;
 }
+
+#chosenPlaces {
+    display:block;
+    width:inherit;
+    
+}
+
+/*Comments*/
+article.comment{
+    border-top: solid 1px #e5e5e5;
+    padding-left:10px;
+    margin-bottom: 10px;
+}
+
+    .comment>header{
+        margin: 0 0 0.5em 0;
+    }
+    .comment>header>p{
+        margin: 5px 0 0 0;
+        padding-left: 6px;
+    }
+    .comment>section>p{
+        margin: 0 0 0 0;
+        padding-left: 6px;
+        border-left: solid 2px #ef8376;
+    }

@@ -1,0 +1,8 @@
+﻿<form method="post" action="@Url.Action("CreateComment", "UserTrip")" class="8u 12u(mobile)" id="commentForm">
+    <label for="Text">Оставьте отзыв о маршруте:</label>
+    <textarea name="CommentText" id="Text" maxlength="300"></textarea>
+    <label for="Rating">Оценка:</label>
+    <input type="number" min="1" max="5" value="5" name="Rating" id="Rating" style="width:70px" />
+    <input type="hidden" value="@ViewBag.TripId" name="TripId" />
+    <input type="submit" value="Оставить отзыв" />
+</form>

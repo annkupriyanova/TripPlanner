@@ -18,19 +18,5 @@ namespace TripPlanner.Controllers
         {
             return RedirectToAction("Index", "Route", new { id = Address });
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

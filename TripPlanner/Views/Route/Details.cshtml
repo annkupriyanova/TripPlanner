@@ -1,0 +1,50 @@
+﻿@model TripPlanner.Models.Trip
+
+@{
+    ViewBag.Title = "Маршрут";
+}
+
+
+
+<!-- Main -->
+<div class="wrapper style1">
+
+    <div class="container">
+        <article id="main" class="special">
+            <header>
+                <h2 id="placeName">Добро пожаловать в @Model.Name !</h2>
+                <p>
+                    <a href="#detailedRoute" class="scrolly">Подробный маршрут</a>
+                </p>
+            </header>
+            <div class="row" style="margin:-15px 0 0 0">
+                <div id="map" class="8u 12u(mobile)" style="height: 600px"></div>
+                <div class="4u 12u(mobile)" id="instructionPanel"></div>
+            </div>
+            <input type="hidden" id="path" value="@Url.Action("GetData", "Route", new { id = Model.TripId })" />
+            
+            <section id="detailedRoute">
+                <input type="hidden" id="pathTable" value="@Url.Action("Details", "Route")" />
+                <div id="loading" style="display:block"><img src="~/Content/images/loading.gif"></div>
+            </section>
+            
+            @{Html.RenderAction("Index", "UserTrip", new { id = Model.TripId }); }
+            @Html.ActionLink("Удалить маршрут", "Delete", "Route", new { id = Model.TripId }, 
+                            new { @class = "viewDialog button", data_dialog_title = "Удаление маршрута", style = "margin-top: 10px" })
+            <hr />
+            <div id="comments">
+                @{Html.RenderAction("IndexComment", "UserTrip", new { id = Model.TripId }); }
+            </div>            
+        </article>
+    </div>
+
+</div>
+
+<script async defer src="~/Scripts/myFunc/initMap.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJVSvujFYhKtctLYwPnCSGtIQEcXZ4rXs&callback=initMap&region=RU&libraries=places">
+</script>
+<script src='@Url.Content("~/Scripts/jquery-ui-1.11.4.min.js")' type="text/javascript"></script>
+
+
+

@@ -49,6 +49,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -114,9 +122,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -172,55 +177,55 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ProfileController.cs" />
+    <Compile Include="Controllers\UserTripController.cs" />
     <Compile Include="Controllers\RouteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AspNetRole.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\AspNetUser.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserClaim.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserLogin.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Comment.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Node.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PlaceInTableViewModel.cs" />
+    <Compile Include="Models\PlaceViewModel.cs" />
     <Compile Include="Models\Route.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Route_Nodes.cs">
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
+    <Compile Include="Models\Routes_Nodes.cs">
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TripPlannerModel.Context.cs">
+    <Compile Include="Models\TPModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TripPlannerModel.Context.tt</DependentUpon>
+      <DependentUpon>TPModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TripPlannerModel.cs">
+    <Compile Include="Models\TPModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TripPlannerModel.tt</DependentUpon>
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TripPlannerModel.Designer.cs">
+    <Compile Include="Models\TPModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TripPlannerModel.edmx</DependentUpon>
+      <DependentUpon>TPModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Trip.cs">
+      <DependentUpon>TPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users_Trips.cs">
+      <DependentUpon>TPModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="IRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -232,6 +237,7 @@
     <Content Include="Content\css\places_list.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\images\header.jpg" />
+    <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\pink_boats.jpg" />
     <Content Include="Content\images\white_boats.jpg" />
     <Content Include="Content\images\pic01.jpg" />
@@ -249,20 +255,53 @@
     <Content Include="Content\images\pic13.jpg" />
     <Content Include="Content\images\pic14.jpg" />
     <Content Include="Content\images\pic15.jpg" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\TripPlannerModel.Context.tt">
+    <Content Include="Models\TPModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TripPlannerModel.edmx</DependentUpon>
-      <LastGenOutput>TripPlannerModel.Context.cs</LastGenOutput>
+      <DependentUpon>TPModel.edmx</DependentUpon>
+      <LastGenOutput>TPModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TripPlannerModel.tt">
+    <Content Include="Models\TPModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TripPlannerModel.edmx</DependentUpon>
-      <LastGenOutput>TripPlannerModel.cs</LastGenOutput>
+      <DependentUpon>TPModel.edmx</DependentUpon>
+      <LastGenOutput>TPModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -282,19 +321,21 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts\FontAwesome.otf" />
-    <EntityDeploy Include="Models\TripPlannerModel.edmx">
+    <Content Include="App_Browsers\qt.browser" />
+    <EntityDeploy Include="Models\TPModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TripPlannerModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>TPModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\TripPlannerModel.edmx.diagram">
-      <DependentUpon>TripPlannerModel.edmx</DependentUpon>
+    <Content Include="Models\TPModel.edmx.diagram">
+      <DependentUpon>TPModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.jscroll.js" />
-    <Content Include="Scripts\jquery.jscroll.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
+    <Content Include="Scripts\jquery.Storage.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -313,16 +354,17 @@
     <Content Include="Scripts\js\skel.min.js" />
     <Content Include="Scripts\js\util.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\myFunc\findPlaces - Copy.js" />
-    <Content Include="Scripts\myFunc\findPlaces.js" />
+    <Content Include="Scripts\myFunc\editTrip.js" />
+    <Content Include="Scripts\myFunc\find.js" />
+    <Content Include="Scripts\myFunc\findPlacesNew.js" />
     <Content Include="Scripts\myFunc\infiniteScroll.js" />
+    <Content Include="Scripts\myFunc\initMap.js" />
+    <Content Include="Scripts\myFunc\ntsaveforms.js" />
+    <Content Include="Scripts\myFunc\ShowHide.js" />
+    <Content Include="Scripts\myFunc\ShowHidePlaceDetails.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Helios\index.html" />
-    <Content Include="Views\Helios\left-sidebar.html" />
-    <Content Include="Views\Helios\no-sidebar.html" />
-    <Content Include="Views\Helios\right-sidebar.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -335,10 +377,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layoutttt.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index1.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -360,15 +398,25 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\No_sidebar.cshtml" />
     <Content Include="Views\Route\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Route\Index - Copy.cshtml" />
     <Content Include="Views\Shared\_LoginPartial - Copy.cshtml" />
+    <Content Include="Views\UserTrip\Index.cshtml" />
+    <Content Include="Views\Route\Details.cshtml" />
+    <Content Include="Views\Route\UserTrips.cshtml" />
+    <Content Include="Views\Route\PlaceBlocks.cshtml" />
+    <Content Include="Views\Route\PlacesInTable.cshtml" />
+    <Content Include="Views\Route\SimilarTrips.cshtml" />
+    <Content Include="Views\Route\Delete.cshtml" />
+    <Content Include="Views\Route\PopularTrips.cshtml" />
+    <Content Include="Views\Route\DetailsAnonym.cshtml" />
+    <Content Include="Views\Route\DeleteDenied.cshtml" />
+    <Content Include="Views\UserTrip\IndexComment.cshtml" />
+    <Content Include="Views\UserTrip\NoComment.cshtml" />
+    <Content Include="Views\UserTrip\AdminDesk.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Profile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

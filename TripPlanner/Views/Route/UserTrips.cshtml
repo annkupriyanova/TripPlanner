@@ -1,0 +1,62 @@
+﻿@model IEnumerable<TripPlanner.Models.Trip>
+
+@{
+    ViewBag.Title = "Личный кабинет";
+} 
+
+<div class="wrapper style1">
+    <div class="container">
+
+        <div class="row">
+            <h2>Ваши маршруты</h2>
+        </div>
+        <div id="routes" class="row">
+            @{ 
+                if (Model.Count() == 0)
+                {
+                    <p>У вас пока нет маршрутов.<br />Перейдите на <a href="@Url.Action("Index", "Home")">главную страницу</a>, чтобы составить новый маршрут.</p>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <article class="4u 12u(mobile) special">
+                            <div style="position:relative">
+                                <a href="@Url.Action("Details", "Route", new { id = item.TripId})" class="image fit">
+                                    @{
+                                        if (item.PhotoUrl == null || item.PhotoUrl == "")
+                                        {
+                                            <img src="~/Content/images/pic01.jpg" alt="@item.Name" />
+                                        }
+                                        else
+                                        {
+                                            <img src="@item.PhotoUrl" alt="@item.Name" />
+                                        }
+                                    }
+
+                                </a>
+                                <header>
+                                    <h3><a href="@Url.Action("Details", "Route", new { id = item.TripId})"><strong>@item.Name</strong></a></h3>
+                                </header>
+                                <div style="position:absolute; bottom:3em; width:100%; text-align:center">
+                                    <div style="display:inline-block; margin-right:1em"><span class="icon fa-calendar" style="margin-right: 7px"></span>@item.Duration</div>
+                                    <div style="display:inline-block; margin-right:1em"><span class="icon fa-flag" style="margin-right: 7px"></span>@item.NumOfNodes</div>
+                                    <div style="display:inline-block"><span class="icon fa-star" style="margin-right: 7px"></span>@item.Rating / 5</div>
+                                </div>
+                            </div>
+
+                        </article>
+                    }
+                }
+            }
+            
+        </div>
+        <div class="row">
+            <p><a href="@Url.Action("ChangePassword", "Manage")" class="button">Сменить пароль</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -15,6 +15,10 @@
                     @*@Html.AntiForgeryToken()*@
                     @Html.ValidationSummary("", new { @class = "text-danger" })
                     <div class="form-group">
+                        <label for="UserName">Имя пользователя</label>
+                        <input type="text" name="UserName" id="UserName" required />
+                    </div>
+                    <div class="form-group">
                         <label for="Email">Email</label>
                         <input type="email" name="Email" id="Email" required />
                     </div>

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TripPlanner.Models.PlaceViewModel>
+
+@foreach (var item in Model)
+{
+    string val = item.Value.Split('|')[1];
+
+    <div class="row place_block">
+        <div class="9u 12u(mobile) description">
+            <div class="row">               
+                <label for="@item.Name" class="name">
+                    <input type="checkbox" class="place" value="@item.Value" id="@item.Name" style="margin-bottom: 15px; margin-right: 30px; height: 25px; width: 25px" />@item.Name
+                </label>
+            </div>
+            <div class="row">
+                <p class="address"><span class="icon fa-flag"></span>@item.Address</p>
+            </div>            
+            @{
+                if (item.Rating != null)
+                {
+                    <div class="row">
+                        <p class="rating"><span class="icon fa-star"></span>@item.Rating из 5</p>
+                    </div>
+                }
+            }  
+            <div class="row">
+                @*<p><a onclick="ShowHidePlaceDetails(@val)" class="detailLink">Подробнее</a></p>*@
+                <p><a href="@item.Website">@item.Website</a></p>
+            </div>
+            @*<div class="row" id="@val" style="display:none"></div>*@
+                       
+            @*<div class="row">
+                <div class="12u 12u(mobile) review">
+                    @{
+                        int i = 0;
+                       
+                        while (i < item.Reviews.Count)
+                        {
+                            if (item.Reviews[i].Text != "")
+                            {
+                                <p>@item.Reviews[i].Text (@item.Reviews[i].AuthorName)</p>
+                                return;
+                            }
+                            else
+                            { i++; }
+                        }
+
+                    }
+                </div>
+            </div>*@                    
+        </div>
+
+        <div class="3u 12u(mobile) photo">
+            <div class="image fit">
+                @{
+                    if (item.PhotoUrl == null)
+                    {
+                        <img src="~/Content/images/pic09.jpg" />
+                    }
+                    else
+                    {
+                        <img src="@item.PhotoUrl" />
+                    }
+                }
+                
+            </div>
+        </div>
+    </div>
+    
+}
+
+@*<script src="~/Scripts/myFunc/ShowHidePlaceDetails.js"></script>*@
