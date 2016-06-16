@@ -49,3 +49,4 @@ C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner\TripPlanner.Tes
 C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner\TripPlanner.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner\TripPlanner.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner\TripPlanner.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\annku\Documents\Visual Studio 2015\Projects\TripPlanner\TripPlanner.Tests\bin\Debug\TripPlanner.Tests.dll.config
